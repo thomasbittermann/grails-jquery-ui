@@ -1,19 +1,26 @@
-<plugin name='jquery-ui' version='1.10.3' grailsVersion='1.2 &gt; *'>
+<plugin name='jquery-ui-x' version='1.10.3' grailsVersion='2.2 &gt; *'>
   <author>Thomas Bittermann</author>
   <authorEmail>thomas@cobonet.de</authorEmail>
   <title>jQuery UI Resources &amp; Extensions</title>
   <description>based on Marc Palmers work ... simply supplies jQuery UI resources, depends on jQuery plugin. Use this plugin to avoid resource duplication and conflicts.</description>
-  <documentation>http://grails.org/plugin/jquery-ui</documentation>
+  <type>JqueryUiXGrailsPlugin</type>
   <resources>
-    <resource>BuildConfig</resource>
-    <resource>Config</resource>
-    <resource>DataSource</resource>
-    <resource>JqueryUiPluginResources</resource>
-    <resource>UrlMappings</resource>
-    <resource>com.grailsrocks.jqueryui.JqueryUiTagLib</resource>
+    <resource>JqueryUiXPluginResources</resource>
+    <resource>com.coderzplaza.grails.jqueryuix.JqueryUiXTagLib</resource>
   </resources>
-  <dependencies>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies />
+  <plugins>
+    <runtime>
+      <plugin group='org.grails.plugins' name='resources' version='1.1.6' />
+      <plugin group='org.grails.plugins' name='jquery' version='1.10.0' />
+    </runtime>
+  </plugins>
+  <runtimePluginRequirements>
     <plugin name='jquery' version='1.6 &gt; *' />
-  </dependencies>
+  </runtimePluginRequirements>
   <behavior />
 </plugin>

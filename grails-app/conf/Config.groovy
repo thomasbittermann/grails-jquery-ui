@@ -74,6 +74,5 @@ log4j = {
 }
 
 jqueryUi.minified = false
-jqueryUi.cdn = "googlecode"
 
 
