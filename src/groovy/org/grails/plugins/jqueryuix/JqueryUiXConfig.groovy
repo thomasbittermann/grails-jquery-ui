@@ -13,7 +13,7 @@ class JqueryUiXConfig {
 	}
 
 	static String getTheme() {
-		getConfig().theme ?: "flick"
+		getConfig().theme ?: "custom-flick"
 	}
 
 	static String getJqueryVersion() {
