@@ -8,19 +8,4 @@
     <resource>JqueryUiXPluginResources</resource>
     <resource>com.coderzplaza.grails.jqueryuix.JqueryUiXTagLib</resource>
   </resources>
-  <repositories>
-    <repository name='grailsCentral' url='http://grails.org/plugins' />
-    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
-  </repositories>
-  <dependencies />
-  <plugins>
-    <runtime>
-      <plugin group='org.grails.plugins' name='resources' version='1.1.6' />
-      <plugin group='org.grails.plugins' name='jquery' version='1.10.0' />
-    </runtime>
-  </plugins>
-  <runtimePluginRequirements>
-    <plugin name='jquery' version='1.6 &gt; *' />
-  </runtimePluginRequirements>
-  <behavior />
 </plugin>
