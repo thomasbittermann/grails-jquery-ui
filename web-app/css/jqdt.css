@@ -1,0 +1,117 @@
+.span6 .dataTables_filter label,
+.span6 .dataTables_length label {
+	height: 30px;
+}
+
+.span6 .dataTables_filter input,
+.span6 .dataTables_length select {
+	margin: 0;
+	padding: 3px 6px;
+	height: 100%;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: auto;
+}
+
+div.dataTables_length {
+    float: left;
+}
+
+div.dataTables_filter {
+    float: right;
+}
+
+div.dataTables_info {
+    float: left;
+}
+
+div.dataTables_paginate {
+    float: right;
+    margin: 0;
+}
+
+div.dataTables_processing {
+    height: 38px;
+}
+
+div.DataTables_sort_wrapper {
+    display: inline-block;
+    height: 16px;
+    line-height: 16px;
+}
+
+.DataTables_sort_icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+table.pretty {
+    clear: both;
+    margin-bottom: 6px;
+}
+
+table.pretty .center {
+    text-align: center;
+}
+
+.ui-state-default {
+    color: #0088cc;
+}
+
+/* Self clearing - */
+div.dataTables_wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+html[xmlns] .dataTables_wrapper {
+    display: block;
+}
+
+* html .dataTables_wrapper {
+    height: 1%;
+}
+
+a.paginate_button,
+a.paginate_active {
+    display: inline-block;
+    background-color: #608995;
+    padding: 2px 6px;
+    margin-left: 2px;
+    cursor: pointer;
+    *cursor: hand;
+}
+
+a.paginate_active {
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+a.paginate_button_disabled {
+    color: #3d6672;
+}
+
+.paging_full_numbers a:active {
+    outline: none
+}
+
+.paging_full_numbers a:hover {
+    text-decoration: none;
+}
+
+div.dataTables_paginate span>a {
+    width: 15px;
+    text-align: center;
+}
+
+.dataTable tr.odd:hover,
+.dataTable tr.even:hover {
+    color: white;
+    background: #0088cc;
+}

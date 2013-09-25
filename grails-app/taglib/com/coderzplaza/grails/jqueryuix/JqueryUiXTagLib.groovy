@@ -56,7 +56,6 @@ class JqueryUiXTagLib {
         ]
     ]
 
-
     def autocomplete = {
     }
 
