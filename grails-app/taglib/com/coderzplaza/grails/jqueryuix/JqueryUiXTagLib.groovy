@@ -49,13 +49,6 @@ class JqueryUiXTagLib {
         js:[writer:'js', type:'text/javascript']
     ]
 
-    static CDN_URLS = [
-        googlecode: [
-            css:{jqver, theme, min -> "http://ajax.googleapis.com/ajax/libs/jqueryui/$jqver/themes/$theme/jquery-ui.css"},
-            js:{jqver, theme, min -> "http://ajax.googleapis.com/ajax/libs/jqueryui/$jqver/jquery-ui.${min ? 'min.js' : 'js'}"}
-        ]
-    ]
-
     def autocomplete = {
     }
 

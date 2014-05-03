@@ -1,16 +1,16 @@
 import org.grails.plugins.jqueryuix.JqueryUiXConfig
 
 def theme = JqueryUiXConfig.theme
-def jqver = JqueryUiXConfig.jqueryUiVersion ?: '1.10.3'
+def jqver = JqueryUiXConfig.jqueryUiVersion ?: '1.10.4.custom.min'
 
 modules = {
     'jquery-theme' {
-        resource id:'theme', url:[plugin: 'jqueryuix', dir: "jqueryuix/themes/${theme}", file: "jquery-ui${jqver}.custom.min.css"], attrs:[media:'screen, projection']
+        resource id:'theme', url:[plugin: 'jqueryuix', dir: "jqueryuix/themes/${theme}", file: "jquery-ui-${jqver}.css"], attrs:[media:'screen, projection']
     }
 
     'jquery-ui' {
         dependsOn 'jquery, jquery-theme'
-        resource id:'js', url:[plugin: 'jqueryuix', dir:'jqueryuix', file:"jquery-ui${jqver}.custom.min.js"], nominify: true, disposition: 'head'
+        resource id:'js', url:[plugin: 'jqueryuix', dir:'jqueryuix', file:"jquery-ui-${jqver}.js"], nominify: true, disposition: 'head'
     }
 
     'jqdt' {
